@@ -1,0 +1,57 @@
+body{
+    background-image: url("/css/arcadeNeon.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.nav_bar{
+    color: white;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.959);
+    height: 110px;
+    padding: 0 30px;
+    border-bottom: 5px solid rgb(255, 166, 0);
+}
+
+.nav_bar h2{
+    float: left;
+}
+.nav_bar ul{
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    float: right;
+    font-size: 25px;
+    word-spacing: 20px;
+}
+
+.nav_bar li{
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+
+/* aqui termina a nav bar */
+
+
+.inicio{
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 50%;
+    height: 300px ;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin: 5px 25% 0 25%;
+}
+
+.inicio h1{
+   
+    margin: 0;
+    color: white;
+}
+
+.inicio p{
+    color: white;
+}
