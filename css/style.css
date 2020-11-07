@@ -1,5 +1,5 @@
 body{
-    background-image: url("/css/arcadeNeon.jpg");
+    background-image: url("../css/arcadeNeon.jpg");
     background-size: cover;
     margin: 0;
 }
@@ -30,6 +30,10 @@ body{
     margin-right: 20px;
     margin-bottom: 0;
 }
+.nav_bar a{
+    color: white;
+    text-decoration: none;
+}
 
 
 /* aqui termina a nav bar */
@@ -38,10 +42,10 @@ body{
 .inicio{
     background-color: rgba(0, 0, 0, 0.658);
     width: 50%;
-    height: 300px ;
+    height: auto ;
     border-right: 1px solid white;
     border-left: 1px solid white;
-    border-bottom: 1px solid white;
+
     text-align: center;
     margin: 5px 25% 0 25%;
 }
@@ -54,4 +58,32 @@ body{
 
 .inicio p{
     color: white;
+    font-size: 25px;
+    padding: 0 20%;
+    text-align: center ;
+    line-height: 140%;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+/* aqui começa o footer */
+
+.footer_pai {
+    text-align: center;
+    height: 80px;
+    width: 99%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black ;
+}
+
+
+.endereço{
+    width: 30%;
+    margin: 5px 35% 0 35%;
+    font-size: 20px;
+}
+
+.redes{
+   word-spacing: 20px; 
 }
