@@ -87,3 +87,20 @@ body{
 .redes{
    word-spacing: 20px; 
 }
+
+/* pagina sobre */
+.sobre{
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 50%;
+    height: auto ;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    text-align: center;
+    margin: 5px 25% 0 25%;
+}
+
+.h1{
+    color: white;
+    font-size: 30px;
+}
