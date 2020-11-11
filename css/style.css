@@ -71,10 +71,11 @@ body{
     text-align: center;
     height: 80px;
     width: 99%;
-    position: absolute;
+    border-top: 3px solid orange;
     bottom: 0;
     color: white;
     background-color: black ;
+    margin-top: 30px;
 }
 
 
@@ -90,17 +91,41 @@ body{
 
 /* pagina sobre */
 .sobre{
+    font-family: 'Anonymous Pro', monospace;
     background-color: rgba(0, 0, 0, 0.658);
     width: 50%;
     height: auto ;
     border-right: 1px solid white;
     border-left: 1px solid white;
+    
 
     text-align: center;
     margin: 5px 25% 0 25%;
 }
 
 .h1{
+    padding: 0 10%;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    text-shadow: green 1px 5px 10px;
+}
+.t1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: red 1px -5px 10px;
+
+    
+}
+
+.login_conteiner{
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 50%;
+    height: auto ;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: white;
+    text-align: center;
+    margin: 5px 25% 0 25%;
+    text-align: center;
 }
