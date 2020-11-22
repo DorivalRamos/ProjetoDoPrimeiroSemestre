@@ -1,8 +1,13 @@
+
 body{
+    background-color: black;
     background-image: url("../css/arcadeNeon.jpg");
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
 }
+
+
 
 .nav_bar{
     color: white;
@@ -97,8 +102,6 @@ body{
     height: auto ;
     border-right: 1px solid white;
     border-left: 1px solid white;
-    
-
     text-align: center;
     margin: 5px 25% 0 25%;
 }
