@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    
+
+    
+</head>
+<body>
+    <header>
+
+    <div class="nav_bar">
+       <div class="conteiner">
+           <h2>Cyber Café</h2>
+
+        <ul>
+          <li> <a href="index.html">inicio</a> </li>
+          <li> <a href="sobre.html">Sobre</a></li>
+          <li> <a href="login.html">Login </a></li>
+        </ul>
+       </div>
+   
+    </div>
+    </header>
+
+    <main>
+      <div class="login_conteiner">  <br>
+       <p class="titulo">Cadastre uma conta </p>
+         <form action="">
+          <p class="b">Email</p>
+          <input type="email" name="C_email" id="email" placeholder="Digite seu e-email" autocomplete="off"><br>
+
+          <p class="b">Nome</p>
+          <input type="text" name="c_nome" id="nome" placeholder="Digite uma senha">
+
+          <p class="b">Senha</p>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha"><br>
+          
+          <input type="submit" value="Cadastrar"  class="p_esenha" id="pcadastro" onclick="pcadastrar()"><br>
+        </form>
+          
+
+      </div>
+    </main>
+
+    <div class="footer_pai" style="position: absolute;" >
+        <div class="endereço">
+         Localização: Rua Hancok lobo, proximo ao metro consolação
+         <div class="redes">
+          Facebook Instagran Telefone:(11)xxxxx-xxxx
+        </div>
+      </div>
+        
+      
+  </div>
+  
+  
+  </body>
+  </html>
+
+<script>
+  function pcadastrar(){
+      alert ('Cadastro realizado com sucesso!!');
+      nome.innerHTML ='';
+      password.innerHTML ='';
+      cadastro.innerHTML ='';
+  }
+
+</script>

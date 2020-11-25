@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    
+
+    
+</head>
+
+<body>
+    <!--header inicio-->
+    <header>
+
+      <div class="nav_bar">
+         <div class="conteiner">
+             <h2>Cyber Café</h2>
+  
+          <ul>
+            <li> <a href="index.html">inicio</a> </li>
+            <li> <a href="sobre.html">Sobre</a></li>
+            <li> <a href="login.html">Login </a></li>
+            <li> <a href="p_perfil.html">perfil </a></li>
+          </ul>
+         </div>
+     
+      </div>
+      </header>
+
+      <main>
+        <div class="login_conteiner">
+          <div class="container">
+              <div class="box-login">
+                  <h1>Login</h1>
+  
+  
+  
+                  <form id="form_login" method="post" onsubmit="return entrar()">
+                      Usuário:
+                      <input type="text" class="input-padrao" name="login">
+                      <br>
+                      Senha:
+                      <input type="password" class="input-padrao" name="senha">
+                      <br>
+                      <button id="btn_entrar" class="btn" type="submit">Entrar</button>
+                  </form>
+  
+                  <div class="extra">
+                      <div id="div_erro" class="msg_erro">
+                      </div>
+  
+                      <!-- <img src="img/carregando.gif" id="img_aguarde"  > -->
+                      
+                  </div> 
+              </div>
+          </div>
+      </div>
+      </main>
+      
+        
+    </div>
+    <!--header fim-->
+
+    
+
+    <div class="footer_pai" style="position: absolute;" >
+        <div class="endereço">
+         Localização: Rua Hancok lobo, proximo ao metro consolação
+         <div class="redes">
+          Facebook Instagran Telefone:(11)xxxxx-xxxx
+        </div>
+      </div>
+
+</body> 
+
+</html>
+<script>
+
+    function entrar() {
+        // aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'p_perfil.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        // img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        // img_aguarde.style.visibility = 'hidden';
+        // div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>
