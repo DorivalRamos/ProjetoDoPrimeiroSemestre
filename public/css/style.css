@@ -140,15 +140,15 @@ body{
     text-align: left;
 }
 
-.titulo{
+#form_login{
     text-shadow: #fd2899 -1px 0px 10px;
     color: #ff2897b8;
 }
 
-.b{
-    text-shadow: green 1px -5px  10px;
-    margin-bottom: -25px;
-    font-size: 30px;
+.box_login h1{
+    text-shadow: #008000d4 -1px -4px 19px;
+    color: #46ab46fa;
+    font-size: 100px;
     
 }
 
@@ -169,7 +169,7 @@ body{
 }
 
 .recuperar_senha legend{
-    font-size: 30px;
+    font-size: 50px;
     color: darkred;
 
 }
@@ -203,3 +203,47 @@ body{
 
 
 /* fim pagina senha */
+
+/* inicio da pagina perfil */
+
+.p_perfil{
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 50%;
+    height: auto ;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    text-align: center;
+    margin: 5px 25% 0 25%;
+    color: white;
+    list-style: none;
+
+}
+
+
+
+.img_perfil{
+    width: 100px;
+    height: 100px;
+}
+
+.box-item{
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    text-align: center;   
+    /* border: white 1px solid; */
+}
+
+.box-item img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.perfil_box{
+    display: flex;
+    width: 100%;
+
+}
+/* Termino da pagina perfil */

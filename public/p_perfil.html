@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="funcoes.js"></script>
 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+
+
+
 </head>
 
-<body>
+<body onload="verificar_autenticacao()">
     <div id="back">
         <header>
 
@@ -23,14 +25,55 @@
                     <ul>
                         <li> <a href="index.html">inicio</a> </li>
                         <li> <a href="sobre.html">Sobre</a></li>
-                        <li> <a href="login.html">Login </a></li>
-                        <li> <a href="login.html">Logout </a></li>
+                        <li><a href="" onclick="logoff()">Logout</a></li>
                     </ul>
                 </div>
 
             </div>
         </header>
-        
+
+        <div class="p_perfil"  style="display: flex;">
+
+
+            <body onload="verificar_autenticacao()"> </body>
+            <img src="./css/dorival.jpg" class="img_perfil" id="img_perfil">
+            <li>Olá, <b id="b_usuario"></b></li>
+
+
+        </div>
+
+        <div class="p_perfil">
+            <div class="">
+                <h2>
+                    Oque você gostaria de ver esse fim de semana no telão? <br>
+                </h2>
+
+                <div class="perfil_box">
+
+                    <div class="box-item">
+                        <img src="./css/lol.png">
+                        <p>Mundial De lol</p>
+                    </div>
+                    <div class="box-item">
+                        <img src="./css/cs.png">
+                        <p>Mundial de CS</p>
+                    </div>
+                    <div class="box-item">
+                        <img src="./css/dota2.png">
+                        <p>Mundial de Dota</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="p_perfil">
+
+
+        </div>
+
 
         <div class="footer_pai">
             <div class="endereço">
@@ -44,6 +87,19 @@
         </div>
 
     </div>
+
+
+
+
 </body>
 
 </html>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao()
+
+
+</script>
