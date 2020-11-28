@@ -124,13 +124,13 @@ body{
 /* Começo da pagina login */
 .login_conteiner{
     background-color: rgba(0, 0, 0, 0.658);
-    width: 30%;
+    width: 40%;
     height: 500px ;
     border-right: 1px solid white;
     border-left: 1px solid white;
     color: white;
     text-align: center;
-    margin: 5px 35% 0 35%;
+    margin: 5px 30% 0 30%;
     font-size: 40px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -202,7 +202,56 @@ body{
 }
 
 
-/* fim pagina senha */
+/* fim pagina recuperar senha */
+
+/* inicio da pagina  cadastrar */
+.cadastrar_countainer{
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 50%;
+    height: auto ;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
+    text-align: center;
+    margin: 5px 25% 0 25%;
+}
+.cadastrar_countainer h1{
+    color: blue;
+    text-shadow: blue 0px -3px 20px;
+    font-size: 90px;
+    
+}
+
+.cadastrar_countainer label{
+    font-size: 40px;
+    text-shadow: #fd2899 0px -1px 6px;
+    color: #ff2897b8;
+}
+.cadastrar_countainer fieldset{
+    height: 600px;
+}
+.cadastrar_countainer form{
+    margin-top: 20px;
+}
+.cadastrar_countainer #btn_entrar{
+    margin-top: 50px;
+    color: #019c77;
+    background-color: #5b414700;
+    margin: 20px 0 0 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 31px;
+    text-shadow: 0px 0px 20px #019c77;
+    cursor: pointer;
+}
+
+
+
+
+/* termino da pagina cadastrar */
+
+
 
 /* inicio da pagina perfil */
 
@@ -217,6 +266,10 @@ body{
     margin: 5px 25% 0 25%;
     color: white;
     list-style: none;
+
+}
+#perfil_li{
+    font-size: 25px;
 
 }
 
@@ -247,3 +300,4 @@ body{
 
 }
 /* Termino da pagina perfil */
+
