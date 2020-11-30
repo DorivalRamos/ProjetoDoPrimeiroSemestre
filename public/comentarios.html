@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="back">
+        <header>
+
+            <div class="nav_bar">
+                <div class="conteiner">
+                    <h2>Cyber Café</h2>
+
+                    <ul>
+                        <li> <a href="index.html">inicio</a> </li>
+                        <li> <a href="sobre.html">Sobre</a></li>
+                        <li> <a href="comentarios.html">Jogos</a></li>
+                        <li> <a href="p_perfil.html">Perfil</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="p_perfil">
+                <div class="perfil_box">
+
+                    <div class="box_coment_img" id="opcao1" style="display: block;">
+
+                        <img src="./css/days_gone.jpg" alt="" >  <br>
+                        <button class="comment_button" onclick="button1()">DaysGone</button><br>
+                        
+
+                    </div>
+
+                    <div class="box_coment_img" style="display: block "id="opcao2" >
+
+                    <div class="box_coment_img">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Assassin%27s_Creed_Valhalla_black_version_logo.svg" alt=""> <br>
+                        <button class="comment_button" onclick="button2()">Ac Valhalla</button><br>
+                    </div>   
+
+                    </div>
+                </div>
+                <br>
+                <div class="mostrar_div">
+                    <span id="mostrar_bt" >
+                         
+                    </span>
+                </div>
+                
+            </div>
+    </div>
+    </main>
+
+
+
+    <div class="footer_pai" style="position: fixed;">
+        <div class="endereço">
+            Localização: Rua Hancok lobo, proximo ao metro consolação
+            <div class="redes">
+                Facebook Instagran Telefone:(11)xxxxx-xxxx
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+        var mostrar1 = {
+            DaysGone : "Days Gone é um jogo de sobrevivência e sobreviver é diferente de viver, isso quer dizer que tudo é escasso no mundo, vc pode carregar pouca munição, antibióticos e todo o material de craft.O mundo é lindo demais, muito detalhado, cada cantinho de uma casa, fazenda, igreja,cidades e vilarejo são feitos com extremo cuidado para que o jogador se sinta nesse mundo, e tudo é apresentado de uma maneira orgânica, nada é forçado sendo assim vc faz sua própria história.",
+        }
+    function button1(){
+        mostrar_bt.innerHTML = ` ${mostrar1.DaysGone} `;
+        opcao2.style = "display:none"
+    }
+
+
+    function button2(){
+        mostrar_bt.innerHTML = ` ${mostrar1.DaysGone} `;
+        opcao1.style = "display:none"
+    }
+</script>

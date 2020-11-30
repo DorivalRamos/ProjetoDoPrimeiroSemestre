@@ -17,10 +17,27 @@ body{
     height: 110px;
     padding: 0 30px;
     border-bottom: 5px solid rgb(255, 166, 0);
+    animation-name: barra_neon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .nav_bar h2{
     float: left;
+    font-family: 'Yellowtail', cursive;
+    animation-name: linha_neon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes linha_neon{
+    0%{color: #800000}
+    25%{color: #ffff00;}
+    50%{color: #000080;}
+    75%{color: #008000 ;}
+    100%{color: #800000;}
 }
 .nav_bar ul{
     margin-bottom: 0;
@@ -50,10 +67,17 @@ body{
     width: 50%;
     height: auto ;
     border-right: 1px solid white;
-    border-left: 1px solid white;
-
+    border-left: 1px solid white ;
     text-align: center;
     margin: 5px 25% 0 25%;
+}
+
+@keyframes barra_neon{
+    0%{border-color: #800000}
+    25%{border-color: #ffff00;}
+    50%{border-color: #000080;}
+    75%{border-color: #008000 ;}
+    100%{border-color: #800000;}
 }
 
 .inicio h1{
@@ -82,6 +106,9 @@ body{
     color: white;
     background-color: black ;
     margin-top: 30px;
+    animation-name: barra_neon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -125,7 +152,7 @@ body{
 .login_conteiner{
     background-color: rgba(0, 0, 0, 0.658);
     width: 40%;
-    height: 500px ;
+    height: auto ;
     border-right: 1px solid white;
     border-left: 1px solid white;
     color: white;
@@ -150,6 +177,25 @@ body{
     color: #46ab46fa;
     font-size: 100px;
     
+}
+
+.login_conteiner #btn_entrar{
+    margin-top: 50px;
+    color: #019c77;
+    /* background-color: transparent; */
+    margin: 20px 0 0 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-shadow: 0px 0px 20px #019c77;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box_login button{
+    background-color: transparent;
+    border: none;
 }
 
 /* Aqui termina o login */
@@ -270,6 +316,7 @@ body{
 }
 #perfil_li{
     font-size: 25px;
+    
 
 }
 
@@ -299,5 +346,87 @@ body{
     width: 100%;
 
 }
-/* Termino da pagina perfil */
+
+.countainer_telão{
+    font-size: 27px;
+    line-height: 50px;
+    color: #11fa18;
+    text-shadow: 0 0 18px #09e839;
+}
+
+.countainer_botao{
+    display: flex;
+}
+
+.box-item_botao1{
+    padding-left: 12.8%;
+}
+
+.box-item_botao2{
+    padding-left: 26%;
+}
+
+.box-item_botao3{
+   padding-left: 26% ;
+}
+
+ /*Termino da pagina perfil */
+
+ /* Começo da aba comentarios */
+.perfil_comentarios{
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 22%;
+    height: auto;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    text-align: center;
+    margin: 5px 1% 0 77%;
+    color: white;
+    list-style: none;
+}
+
+.box_coment_img{
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.box_coment_img img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.box_coment_img #opcao1{
+    padding-left: 35%;
+}
+.box_coment_img #opcao2{
+    padding-left: 35%;
+}
+
+.mostrar_div img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box_coment_img button{
+    background-color: transparent;
+    border: none;
+    color: green;
+    cursor: pointer;
+}
+
+.mostrar_div {
+    height: auto;
+    padding: 0 60px;
+    word-spacing: 10px;
+    line-height: 33px;
+    font-size: 20px;
+}
+
+
+ /*  termino da aba comentarios */
 

@@ -25,6 +25,7 @@
                     <ul>
                         <li> <a href="index.html">inicio</a> </li>
                         <li> <a href="sobre.html">Sobre</a></li>
+                        <li> <a href="comentarios.html">Jogos</a></li>
                         <li><a href="" onclick="logoff()">Logout</a></li>
                     </ul>
                 </div>
@@ -34,14 +35,25 @@
 
 
 
-        <main class="" >
+        <main class="">
+
+            <!-- <div class="perfil_comentarios" style="display: flex;">
+
+
+
+                <li>Olá, <b id="b_usuario"></b> Sejá bem vindo novamente</li></span>
+
+
+            </div> -->
             <div class="p_perfil" style="display: flex;">
 
 
+
                 <body onload="verificar_autenticacao()"> </body>
-                <img src="./css/dorival.jpg" class="img_perfil" id="img_perfil"><br>
+                <img src="./css/loading-animations-preloader-gifs-ui-ux-effects-32 (1).gif" class="img_perfil" id="img_perfil"><br>
                 <span id="perfil_li">
-                <li >Olá, <b id="b_usuario"></b> Sejá bem vindo novamente</li></span>
+                    <li>Olá, <b id="b_usuario"></b> Sejá bem vindo novamente</li>
+                </span>
 
 
             </div>
@@ -56,43 +68,69 @@
 
                         <div class="box-item">
                             <img src="./css/lol.png">
-                            <span id="box_lol"></span>
-                            <p>Mundial De lol</p> <br>
-                            <button style="display: block" onclick="escolher_telao_lol()"
-                                id="buttom_lol">Escolher</button>
+                                <p>Mundial De lol</p> <br>        
                         </div>
                         <div class="box-item" id="box_cs">
                             <img src="./css/cs.png">
                             <p>Mundial de CS</p> <br>
-                            <button onclick="escolher_telao_cs()">Escolher</button>
+
                         </div>
                         <div class="box-item">
                             <img src="./css/dota2.png" id='box_cs'>
                             <p>Mundial de Dota</p> <br>
-                            <button onclick="escolher_telao_dota()">Escolher</button>
+
                         </div> <br>
+                    </div>
+                    <div class="countainer_botao">
 
+                        <div class="box-item_botao1">
+                            <button style="display: block" onclick="escolher_telao_lol()"
+                                id="buttom_lol">Escolher</button> </div>
 
-
+                        <div class="box-item_botao2">
+                            <button style="display: block" onclick="escolher_telao_cs()"
+                                id="buttom_cs">Escolher</button>
+                        </div>
+                        <div class="box-item_botao3">
+                            <button style="display: block" onclick="escolher_telao_dota()"
+                                id="buttom_dota">Escolher</button>
+                        </div>
                     </div>
 
+                    <div class="countainer_telão">
+                        <span id="box_telao"></span>
+                    </div> <br>
 
-
+                
                 </div>
             </div>
-        </main> 
+                
+            <div class="p_perfil">
+                <div>
+                    <h1>Reserve aqui sua Maquina, Console, Assento ou Ingresso</h1>
 
-
-        <div class="footer_pai">
-            <div class="endereço">
-                Localização: Rua Hancok lobo, proximo ao metro consolação
-                <div class="redes">
-                    Facebook Instagran Telefone:(11)xxxxx-xxxx
+                    <h3>A pagina se encontra fora do ar , desculpe o trantorno!!
+                        Por enquanto entre em contato por meio do whatsApp!!
+                    </h3>
                 </div>
             </div>
 
 
+
+
+        </main>
+
+
+        <div class="footer_pai" style="position: fixed;">
+            <div class=" endereço">
+            Localização: Rua Hancok lobo, proximo ao metro consolação
+            <div class="redes">
+                Facebook Instagran Telefone:(11)xxxxx-xxxx
+            </div>
         </div>
+
+
+    </div>
 
     </div>
 
@@ -117,8 +155,29 @@
 
     function escolher_telao_lol() {
         telão.lol++;
-        box_lol.innerHTML = `${telão.lol} Votos`;
-        buttom_lol.style = block;
+        box_telao.innerHTML = `${telão.lol} Votos Para o Campeonato de League Of Legends <br> ${telão.cs} Votos Para o Campeonato De Counter Stike <br> ${telão.dota} Votos Para o Campeonato Dota `;
+        buttom_lol.style = "display: none";
+        buttom_cs.style = "display: none";
+        buttom_dota.style = "display: none";
+
+    }
+
+    function escolher_telao_cs() {
+        telão.cs++;
+        box_telao.innerHTML = `${telão.lol} Votos Para o Campeonato de League Of Legends <br> ${telão.cs} Votos Para o Campeonato De Counter Stike <br> ${telão.dota} Votos Para o Campeonato Dota `;
+        buttom_lol.style = "display: none";
+        buttom_cs.style = "display: none";
+        buttom_dota.style = "display: none";
+
+
+    }
+    function escolher_telao_dota() {
+        telão.dota++;
+        box_telao.innerHTML = `${telão.lol} Votos Para o Campeonato de League Of Legends <br> ${telão.cs} Votos Para o Campeonato De Counter Stike <br> ${telão.dota} Votos Para o Campeonato Dota `;
+        buttom_lol.style = "display: none";
+        buttom_cs.style = "display: none";
+        buttom_dota.style = "display: none";
+
 
     }
 
