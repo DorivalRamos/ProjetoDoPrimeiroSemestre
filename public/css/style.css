@@ -207,11 +207,12 @@ body{
     font-family: 'Anonymous Pro', monospace;
     background-color: rgba(0, 0, 0, 0.658);
     width: 40%;
-    height: 500px ;
+    height: auto ;
     border-right: 1px solid white;
     border-left: 1px solid white;
     text-align: center;
     margin: 50px 30% 0 30%;
+    color: white;
 }
 
 .recuperar_senha legend{
@@ -236,6 +237,13 @@ body{
     border:none;
     width: 200px;
     height: 25px;
+}
+
+.recuperar_senha #button_resetar{
+    background-color: transparent;
+    border: none;
+    color: green;
+    cursor: pointer;
 }
 
 .p_esenha{
@@ -264,7 +272,7 @@ body{
 .cadastrar_countainer h1{
     color: blue;
     text-shadow: blue 0px -3px 20px;
-    font-size: 90px;
+    font-size: 68px;
     
 }
 
